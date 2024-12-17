@@ -1,14 +1,16 @@
+import { Link } from "react-router-dom";
+
 function Contact () {
-    return(
-        <>
-        <h1>Contact</h1>
-        <ul>
-           <button><a href="Home">Home</a></button>
-           <button><a href="About">About</a></button>
-           <button><a href="Contact">Contact</a></button>
-        </ul>
-        </>
-    )
+  return(
+      <>
+      <h1>Contact</h1>
+      <ul>
+         <button><Link to={"/home"}>Home</Link></button>
+         <button><Link to={"/about"}>About</Link></button>
+         <button><Link to={"/contact"}>Contact</Link></button>
+      </ul>
+      </>
+  )
 }
 
 export default Contact;
